@@ -16,11 +16,14 @@ public class Ejercicio2Test {
 	}
 	
 	@ParameterizedTest (name = "{index} => Con entradas ({0} y {1}) sale {2}")
-	@CsvSource({"user, pass, false",
+	@CsvSource({"user, Pass, false",
 				"usernamelargodemasde30caracteres, 1, false",
+				"usernamelargo, passwordlargodemasde30caracteres, false",
 				"'', 1, false",
 				"14, '', false",
 				"user, Pass1, true",
+				"user21, Pass1, false",
+				"user, paSs123, false",
 				"User, Pass123, false"})
 	
 	void testConexion(String input1,String input2, boolean expected) {

@@ -1,23 +1,21 @@
 package ual.hmis.sesion06.ejercicio8;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import ual.hmis.sesion06.ejercicio3.Ejercicio3;
 
 public class Ejercicio8Test {
 	static Ferry fr;
 	@BeforeAll
 	public static void setUp() {
 		fr = new Ferry(10,10);
-		assertTrue(fr.vacio());
+		assertEquals(fr.vacio(),true);
 	}
 	
-	@ParameterizedTest (name = "{index} => Añadiendo vehiculo ({0},{1}) sale {2}, {3}, {4}, {5}, {6}")
+	@ParameterizedTest (name = "{index} => Anyadiendo vehiculo ({0},{1}) sale {2}, {3}, {4}, {5}, {6}")
 	@CsvSource({"0,0, true, 1, false, false, false",
 				"0,100, true, 2, false, false, true",
 				"100,100, true, 3, false, true, true",

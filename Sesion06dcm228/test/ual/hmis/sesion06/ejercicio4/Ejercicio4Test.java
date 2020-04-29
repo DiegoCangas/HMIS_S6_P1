@@ -6,7 +6,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import ual.hmis.sesion06.ejercicio4.Ejercicio4;
 
 public class Ejercicio4Test {
 	static Ejercicio4 ej;
