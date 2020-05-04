@@ -3,6 +3,12 @@
   <groupId>Sesion06dcm228</groupId>
   <artifactId>Sesion06dcm228</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+   <distributionManagement>
+    <site>
+        <id>www.yourcompany.com</id>
+        <url>scp://www.yourcompany.com/www/docs/project/</url>
+    </site>
+</distributionManagement>
  <build>
 		<sourceDirectory>src</sourceDirectory>
 		<testSourceDirectory>test</testSourceDirectory>
